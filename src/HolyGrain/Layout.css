@@ -1,0 +1,46 @@
+header,
+nav,
+main,
+aside,
+footer {
+  text-align: center;
+  padding: 12px;
+}
+
+header,
+footer {
+  height: 100px;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    'nav main aside' 1fr
+    / 100px 1fr 100px;
+}
+
+header {
+  grid-area: head;
+  background-color: tomato;
+}
+
+nav {
+  grid-area: nav;
+  background-color: coral;
+}
+
+main {
+  grid-area: main;
+  height: 70vh;
+  background-color: moccasin;
+}
+
+aside {
+  grid-area: aside;
+  background-color: sandybrown;
+}
+
+footer {
+  grid-area: foot;
+  background-color: slategray;
+}
